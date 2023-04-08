@@ -12,6 +12,7 @@
     <!-- intro -->
     <header>
         <h1>Tarea 1: HTML Cheat Sheet</h1>
+        <a href="../index.html">Go back home.</a>
         <p>
             <em>HTML</em>, HyperText Markup Language, gives content structure and
             meaning by defining that content as, for example, headings, paragraphs,
@@ -25,37 +26,14 @@
         use description
         example
     -->
-    <!-- a
-        p
-        h1, h2, ... , h6
-        div
-        span
-        strong
-        i
-        u
-        b
-        strike
-        small
-        em
-        header
-        section
-        article
-        aside
-        footer
-        nav
-        img
-        br
-        hr
-        form
-        table
-        ul
-        ol -->
+
     <section style="padding-top:15px">
         <!-- anchor -->
         <section>
             <h3>&lta&gt</h3>
-            <p>The <strong>anchor</strong> element is used to link from a web page to another. This is done by using the
-                href attribute. With HTML5, anchors can wrap other elements to make blocks of content links. To open
+            <p>
+                The <strong>anchor</strong> element is used to link from a web page to another. This is done by using
+                the href attribute. With HTML5, anchors can wrap other elements to make blocks of content links. To open
                 links in a new window: target=”_blank”. We can also link to parts of the same page using ids, as such:
                 href=”#top”.
             </p>
@@ -70,17 +48,151 @@
             </div>
         </section>
 
-        <section>
-            <h3></h3>
-            <p></p>
+        <!-- paragrapg -->
+        <section style="padding-top:5px">
+            <h3>&ltp&gt</h3>
+            <p>
+                The <strong>paragraph</strong> element is a block-level element that semantically represents, well, a
+                paragraph.
+            </p>
+            <div>
+                Any content within it will be it's own paragraph, so it's used like this:
+                <div>
+                    &ltp&gt
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Paragraph content
+                    <br>&lt/p&gt
+                </div>
+            </div>
+        </section>
+
+        <!-- heading -->
+        <section style="padding-top:5px">
+            <h3>&lth1&gt, &lth2&gt, ..., &lth6&gt</h3>
+            <p>
+                The <strong>heading</strong> element is a block-level element that helps establish hierarchy. &lth1&gt
+                should be the heading of a page or section.
+            </p>
+            <div>
+                Example of the three bottom heading element:
+                <h4 style="padding:0px; margin: 3px;">&lth4&gt</h4>
+                <h5 style="padding:0px; margin: 3px;">&lth5&gt</h5>
+                <h6 style="padding:0px; margin: 3px;">&lth5&gt</h6>
+            </div>
+        </section>
+
+        <!-- div -->
+        <section style="padding-top:5px">
+            <h3>&ltdiv&gt</h3>
+            <p>
+                The <strong>div</strong> element is a block-level commonly used to identify large groupings of content.
+            </p>
+            <div>
+                It's used like so:
+                <div>
+                    &ltdiv&gt
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Content that will be it's own block.
+                    <br>&lt/div&gt
+                </div>
+            </div>
+        </section>
+
+        <!-- span -->
+        <section style="padding-top:5px">
+            <h3>&ltspan&gt</h3>
+            <p>
+                The <strong>span</strong> element is a inline-level commonly used to identify smaller groupings of text.
+            </p>
+            <div>
+                As a inline element it can be used to group a small section of text. For example:
+                <div>
+                    You can make a word &ltspan style="color:cornflowerblue"&gtblue&lt/span&gt
+                </div>
+                <div>
+                    You can make a word <span style="color:cornflowerblue">blue</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- strong -->
+        <section style="padding-top:5px">
+            <h3>&ltstrong&gt</h3>
+            <p>
+                The <strong>strong</strong> element is used to make text bold and place a strong importance on it. It is
+                different from &ltb&gt semantically.
+            </p>
+            <div>
+                It wraps around the word that you want to mark as important:
+                <div>
+                    This word is &ltstrong&gtimportant!&lt/strong&gt
+                </div>
+                <div>
+                    This word is <strong>important!</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- i -->
+        <section style="padding-top:5px">
+            <h3>&lti&gt</h3>
+            <p>
+                The <strong>italicized</strong> element is an inline-element that is used to define an alternate tone
+                within a text section. Only used when there is no other more appropiate semantic element.
+            </p>
+            <div>
+                It is used like so:
+                <div>
+                    Like I always say, &lti&gtcarpe diem&lt/i&gt.
+                </div>
+                <div>
+                    Like I always say, <i>carpe diem</i>.
+                </div>
+            </div>
+        </section>
+
+        <!-- underline -->
+        <section style="padding-top:5px">
+            <h3>&ltu&gt</h3>
+            <p>
+                The <strong>underline</strong> element is an inline-element that underlines the text selected. It is
+                usually used to mark misspelled words.
+            </p>
+            <div>
+                For example:
+                <div>
+                    This word is &ltu&gtmispeled&lt/u&gt.
+                </div>
+                <div>
+                    This word is <u>mispeled</u>.
+                </div>
+            </div>
+        </section>
+
+        <!-- b -->
+        <section style="padding-top:5px">
+            <h3>&ltb&gt</h3>
+            <p>
+                The <strong>bold</strong> element is an inline-element that makes the text bold. It should be used only
+                when neither a heading, strong, or em element makes sense.
+            </p>
+            <div>
+                For example:
+                <div>
+                    This word is &ltb&gtbold&lt/b&gt.
+                </div>
+                <div>
+                    This word is <b>bold</b>.
+                </div>
+            </div>
+        </section>
+
+        <section style="padding-top:5px">
+            <h3>&lt&gt</h3>
+            <p>
+
+            </p>
             <div></div>
         </section>
 
-        <section>
-            <h3></h3>
-            <p></p>
-            <div></div>
-        </section>
     </section>
 </body>
 
