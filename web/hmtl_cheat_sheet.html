@@ -12,12 +12,13 @@
     <!-- intro -->
     <header>
         <h1>Tarea 1: HTML Cheat Sheet</h1>
-        <a href="../index.html">Go back home.</a>
+        <a href="../index.html">Go back home</a>
         <p>
             <em>HTML</em>, HyperText Markup Language, gives content structure and
             meaning by defining that content as, for example, headings, paragraphs,
             or images.
         </p>
+        <hr id="horizontalRule">
     </header>
 
     <!-- 
@@ -48,8 +49,8 @@
             </div>
         </section>
 
-        <!-- paragrapg -->
-        <section style="padding-top:5px">
+        <!-- paragraph -->
+        <section style="padding-top:10px">
             <h3>&ltp&gt</h3>
             <p>
                 The <strong>paragraph</strong> element is a block-level element that semantically represents, well, a
@@ -66,7 +67,7 @@
         </section>
 
         <!-- heading -->
-        <section style="padding-top:5px">
+        <section style="padding-top:10px">
             <h3>&lth1&gt, &lth2&gt, ..., &lth6&gt</h3>
             <p>
                 The <strong>heading</strong> element is a block-level element that helps establish hierarchy. &lth1&gt
@@ -81,7 +82,7 @@
         </section>
 
         <!-- div -->
-        <section style="padding-top:5px">
+        <section style="padding-top:10px">
             <h3>&ltdiv&gt</h3>
             <p>
                 The <strong>div</strong> element is a block-level commonly used to identify large groupings of content.
@@ -97,7 +98,7 @@
         </section>
 
         <!-- span -->
-        <section style="padding-top:5px">
+        <section style="padding-top:10px">
             <h3>&ltspan&gt</h3>
             <p>
                 The <strong>span</strong> element is a inline-level commonly used to identify smaller groupings of text.
@@ -114,7 +115,7 @@
         </section>
 
         <!-- strong -->
-        <section style="padding-top:5px">
+        <section style="padding-top:10px">
             <h3>&ltstrong&gt</h3>
             <p>
                 The <strong>strong</strong> element is used to make text bold and place a strong importance on it. It is
@@ -132,10 +133,10 @@
         </section>
 
         <!-- i -->
-        <section style="padding-top:5px">
+        <section style="padding-top:10px">
             <h3>&lti&gt</h3>
             <p>
-                The <strong>italicized</strong> element is an inline-element that is used to define an alternate tone
+                The <strong>italicized</strong> element is an inline-level that is used to define an alternate tone
                 within a text section. Only used when there is no other more appropiate semantic element.
             </p>
             <div>
@@ -150,10 +151,10 @@
         </section>
 
         <!-- underline -->
-        <section style="padding-top:5px">
+        <section style="padding-top:10px">
             <h3>&ltu&gt</h3>
             <p>
-                The <strong>underline</strong> element is an inline-element that underlines the text selected. It is
+                The <strong>underline</strong> element is an inline-level that underlines the text selected. It is
                 usually used to mark misspelled words.
             </p>
             <div>
@@ -167,11 +168,11 @@
             </div>
         </section>
 
-        <!-- b -->
-        <section style="padding-top:5px">
+        <!-- bold -->
+        <section style="padding-top:10px">
             <h3>&ltb&gt</h3>
             <p>
-                The <strong>bold</strong> element is an inline-element that makes the text bold. It should be used only
+                The <strong>bold</strong> element is an inline-level that makes the text bold. It should be used only
                 when neither a heading, strong, or em element makes sense.
             </p>
             <div>
@@ -185,7 +186,235 @@
             </div>
         </section>
 
-        <section style="padding-top:5px">
+        <!-- strike -->
+        <section style="padding-top:10px">
+            <h3>&lts&gt</h3>
+            <p>
+                The <strong>strike</strong> element is an inline-level that renders text with a strikethrough. It
+                should be used for text that is no longer accurate.
+            </p>
+            <div>
+                For example:
+                <div>
+                    &lts&gtLow availability!&lt/s&gt &ltstrong&gtSOLD OUT!&lt/strong&gt
+                </div>
+                <div>
+                    <s>Low availability!</s> <strong>SOLD OUT!</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- small -->
+        <section style="padding-top:10px">
+            <h3>&ltsmall&gt</h3>
+            <p>
+                The <strong>small</strong> element is an inline-level that defines smaller text. It's usually used for
+                text like copyright or asides.
+            </p>
+            <div>
+                For example:
+                <div>
+                    MyBusiness &ltsmall&gtReserved Rights.&lt/small&gt
+                </div>
+                <div>
+                    MyBusiness <small>Reserved Rights.</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- emphasis -->
+        <section style="padding-top:10px">
+            <h3>&ltem&gt</h3>
+            <p>
+                The <strong>emphasis</strong> element is an inline-level used for text that should be emphasized. It
+                italicizes the text, but it's different semantically from &lti&gt
+            </p>
+            <div>
+                For example:
+                <div>
+                    This &ltem&gtcannot&lt/em&gt be happening.
+                </div>
+                <div>
+                    This <em>cannot</em> be happening.
+                </div>
+            </div>
+        </section>
+
+        <!-- header -->
+        <section style="padding-top:10px">
+            <h3>&ltheader&gt</h3>
+            <p>
+                The <strong>header</strong> is a block-level element used to identify the top of a page.
+            </p>
+            <div>
+                It usually has a heading, and some paragraphs. For example, this page's header is:
+                <p>
+                    &ltheader&gt <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lth1&gtTarea 1: HTML Cheat Sheet&lt/h1&gt <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lta href="../index.html"&gtGo back home&lt/a&gt <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&ltp&gt <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltem&gtHTML&lt/em&gt, HyperText Markup Language,
+                    gives content structure and
+                    meaning by defining that content as, for example, headings, paragraphs,
+                    or images. <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt/p&gt <br>
+                    &lt/header&gt <br>
+                </p>
+            </div>
+        </section>
+
+        <!-- section -->
+        <section style="padding-top:10px">
+            <h3>&ltsection&gt</h3>
+            <p>
+                The <strong>section</strong> block-level element is used to identify a thematic grouping of content. Can
+                include a heading. Break up and provide hierarchy to a page.
+            </p>
+            <div>
+                It's used as any block-level element:
+                <div>
+                    &ltsection&gt
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Content and elements within this section.
+                    <br>&lt/section&gt
+                </div>
+            </div>
+        </section>
+
+        <!-- article -->
+        <section style="padding-top:10px">
+            <h3>&ltarticle&gt</h3>
+            <p>
+                The <strong>article</strong> block-level element is used to identify a section of independent,
+                self-contained content. Often used when the content could be redistributed elsewhere.
+            </p>
+            <div>
+                It's used as any block-level element:
+                <div>
+                    &ltarticle&gt
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Content and elements within this article.
+                    <br>&lt/article&gt
+                </div>
+            </div>
+        </section>
+
+        <!-- aside -->
+        <section style="padding-top:10px">
+            <h3>&ltaside&gt</h3>
+            <p>
+                The <strong>aside</strong> block-level element holds content such as sidebars, or brief explanations,
+                related to the content surrounding it.
+            </p>
+            <div>
+                It's used as any block-level element:
+                <div>
+                    &ltaside&gt
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Content and elements within this aside.
+                    <br>&lt/aside&gt
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section style="padding-top:10px">
+            <h3>&ltfooter&gt</h3>
+            <p>
+                The <strong>footer</strong> block-level element identifies the closing or end of a page, article,
+                section, or other segment.
+            </p>
+            <div>
+                It's used as any block-level element:
+                <div>
+                    &ltfooter&gt
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Content and elements within this footer.
+                    <br>&lt/footer&gt
+                </div>
+            </div>
+        </section>
+
+        <!-- nav -->
+        <section style="padding-top:10px">
+            <h3>&ltnav&gt</h3>
+            <p>
+                The <strong>nav</strong> element identifies a section of major navigational links on a page. Links
+                within nav will link to other pages or parts within the same website.
+            </p>
+            <div>
+                It's used as any block-level element:
+                <div>
+                    &ltnav&gt
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Content and elements within this nav.
+                    <br>&lt/nav&gt
+                </div>
+            </div>
+        </section>
+
+        <!-- image -->
+        <section style="padding-top:10px">
+            <h3>&ltimg&gt</h3>
+            <p>
+                The <strong>image</strong> inline-level element is used to embed images in an HTML page. There are two
+                important attributes: src for the path of the image, and alt for if the image cannot be displayed.
+            </p>
+            <div>
+                For example, the following tag would render the following image:
+                <p>
+                    &ltimg
+                    src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*"
+                    alt="Cute dog" height="200"&gt
+                </p>
+                <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*"
+                    alt="Cute dog" height="200">
+            </div>
+        </section>
+
+        <!-- break -->
+        <section style="padding-top:10px">
+            <h3>&ltbr&gt</h3>
+            <p>
+                The <strong>break</strong> inline-level element forces a line break.
+            </p>
+            <div>
+                For example:
+                <div>
+                    The break element &ltbr&gt forces a line break.
+                </div>
+                <p>
+                    The break element <br> forces a line break.
+                </p>
+            </div>
+        </section>
+
+        <!-- horizontal rule -->
+        <section style="padding-top:10px">
+            <h3>&lthr&gt</h3>
+            <p>
+                The <strong>horizontal rule</strong> inline-level element is used to identify an important change in
+                topic or division within sections.
+            </p>
+            <div>
+                An <a href="#horizontalRule">example of a horizontal rule element</a> is in this page, after the header,
+                to separeate it from
+                the rest
+                of the content.
+            </div>
+        </section>
+
+        <!-- form -->
+        <section style="padding-top:10px">
+            <h3>&ltform&gt</h3>
+            <p>
+
+            </p>
+            <div></div>
+        </section>
+        <section style="padding-top:10px">
+            <h3>&lt&gt</h3>
+            <p>
+
+            </p>
+            <div></div>
+        </section>
+        <section style="padding-top:10px">
             <h3>&lt&gt</h3>
             <p>
 
