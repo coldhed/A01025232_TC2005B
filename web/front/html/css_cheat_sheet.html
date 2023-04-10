@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="../css/css_cheat_sheet.css">
+</head>
+
+<body>
+    <header class="container">
+        <h1>Hello Cascading Style Sheet (CSS)!</h1>
+        <a href="../../../index.html">Go back home</a>
+        <p>
+            CSS is a stylesheet language that is used to style elements in an HTML document.
+        </p>
+    </header>
+    <section class="container">
+        <!-- border -->
+        <section class="container">
+            <h3>Border</h3>
+            <p>All block-level elements have a border, which by default is not visible. This attribute is used to style
+                such border, and it takes one through three properties: width, style, color. </p>
+            <div class="example" id="border_example">border: medium solid rgb(17, 74, 110);</div>
+        </section>
+
+        <!-- border side -->
+        <section class="container">
+            <h3>Border-side</h3>
+            <p>There are four more specific border attributes: border-left, border-right, border-top, border-bottom.
+                These allow more specific border manipulation.</p>
+            <div class="example" id="border-side_example">
+                border-right: medium solid rgb(17, 74, 110); <br>
+                border-top: dashed rgb(30, 142, 212); <br>
+                border-left: double medium rgb(17, 74, 110); <br>
+                border-bottom: solid; <br>
+            </div>
+        </section>
+
+        <!-- border-radius -->
+        <section class="container">
+            <h3>Border Radius</h3>
+            <p>Border radius defines the radius of the border's corners, allowing for round corners.</p>
+            <div class="example" id="border-radius_example">
+                border: medium solid rgb(17, 74, 110); <br>
+                border-radius: 10px; <br>
+            </div>
+        </section>
+
+        <!-- background-image -->
+        <section class="container">
+            <h3>Background Image</h3>
+            <p>Sets the background for an element with a url or a path to an image.</p>
+            <div class="example" id="background-image_example">Example</div>
+        </section>
+
+        <!-- color -->
+        <section class="container">
+            <h3>Color</h3>
+            <p>The color attribute sets the color of the text in that element. It can receive a name of a color, an rgb
+                value, or a hex value.</p>
+            <div class="example" id="color_example">color: #da6c12;</div>
+        </section>
+
+        <!-- font -->
+        <section class="container">
+            <h3>Font</h3>
+            <p>Font is a short-hand attribute that can receive the following properties: style, variant, weight, size,
+                family.</p>
+            <div class="example" id="font_example">font: italic small-caps bold 12px "Comic Sans MS", "Comic Sans";
+            </div>
+        </section>
+
+        <!-- font-family -->
+        <section class="container">
+            <h3>Font Family</h3>
+            <p>Specifies the font for an element</p>
+            <div class="example" id="font-family_example">font-family: "Comic Sans MS", "Comic Sans";</div>
+        </section>
+
+        <!-- font style and weight -->
+        <section class="container">
+            <h3>Font Style & Weight</h3>
+            <p>The font style allows the font to be either normal or italic, while the weight can be bold, or a more
+                specific number for it's width.</p>
+            <div class="example" id="style-weight_example">
+                font-style: italic; <br>
+                font-weight: bold;
+            </div>
+        </section>
+
+        <!-- width and height -->
+        <section class="container">
+            <h3>Width and Height</h3>
+            <p>
+                The width and height attributes allow to set the size of an element. They can be the desired value, or a
+                percentage of the containing block.
+            </p>
+            <div class="example" id="width-height_example">
+                width: 30%; <br>
+                height: 75px; <br>
+                background-color: rgb(17, 74, 110);
+            </div>
+        </section>
+
+        <!-- list-style -->
+        <section class="container">
+            <h3>List Style</h3>
+            <p>
+                The list-style attribute allows to define the following propertires for a list: type, image, and
+                position.
+            </p>
+            <div>
+                <ul>
+                    <li class="example" id="list-style_example1">list-style: square inside;</li>
+                    <li class="example" id="list-style_example2">list-style: decimal inside;</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- margin -->
+        <section class="container">
+            <h3>Margin</h3>
+            <p>Margin is the space between the border of the block, and the rest of the elements. Changing this value
+                can help move content around to make it more readable.</p>
+            <div class="example" id="margin_example">margin-left: 100px;</div>
+        </section>
+
+        <!-- padding -->
+        <section class="container">
+            <h3>Padding</h3>
+            <p>Padding is similar to the margin, but is the space between the content of the block, and the border of
+                the block. So changing this value also moves the content, but dodes not move the block. </p>
+            <div class="example" id="padding_example">padding-left: 100px;</div>
+        </section>
+
+        <!-- overflow -->
+        <section class="container">
+            <h3>Overflow</h3>
+            <p>
+                The overflow property controls how text behaves when it goes outside the limit of the container. The
+                most used options are: visible, hidden, scroll, and auto (like scroll but adds a scrollbar only when
+                necessary).
+            </p>
+            <div class="example" id="overflow_example">
+                color: white; <br>
+                background-color: rgb(17, 74, 110); <br>
+                width: fit-content; <br>
+                height: 30px; <br>
+                overflow: scroll;
+            </div>
+        </section>
+
+        <!-- display -->
+        <section class="container">
+            <h3>Display</h3>
+            <p>
+                The display attribute controls how content within an element is rendered. As such, it can be a very
+                helpful tool to control the layout of a page
+            </p>
+            <div class="example" id="display_example">
+                display: block; <br>
+                margin-left: auto; <br>
+                margin-right: auto;
+            </div>
+        </section>
+
+        <!-- position -->
+        <section class="container">
+            <h3>Position</h3>
+            <p>
+                The position attribute controls how elements are positioned. There are very helpful attributes here,
+                like fixed and sticky which changes or maintains the position of that element when things are scrolled.
+                The static attribute is the default. With relative, positioning starts in its original spot, but we
+                can change from there
+            </p>
+            <div class="example" id="position_example">
+                position: relative; <br>
+                left: 30px;
+            </div>
+        </section>
+
+        <!-- filter -->
+        <section class="container">
+            <h3>Filter</h3>
+            <p>Filter applies visual effects to elements. There are several options like greyscale, or blur.</p>
+            <div class="example" id="filter_example">
+                filter: blur(1px);
+            </div>
+        </section>
+
+    </section>
+</body>
+
+</html>

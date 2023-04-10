@@ -1,0 +1,123 @@
+/* selectores */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+}
+
+h1,
+h2,
+h3 {
+  /* atributos */
+  color: rgb(17, 74, 110);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(30, 142, 212);
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding-bottom: 10px;
+}
+
+.example {
+  width: fit-content;
+  padding: 10px;
+  font-size: small;
+}
+
+#border_example {
+  border: medium solid rgb(17, 74, 110);
+}
+
+#border-side_example {
+  border-right: medium solid rgb(17, 74, 110);
+  border-top: dashed rgb(30, 142, 212);
+  border-left: double medium rgb(17, 74, 110);
+  border-bottom: solid;
+}
+
+#border-radius_example {
+  border: medium solid rgb(17, 74, 110);
+  border-radius: 10px;
+}
+
+#background-image_example {
+  height: 100px;
+  width: 100px;
+  color: white;
+  background-repeat: no-repeat;
+  background-image: url("../images/dog_image.jpg");
+  background-size: 100px 100px;
+}
+
+#color_example {
+  color: #da6c12;
+}
+
+#font_example {
+  font: italic small-caps bold 12px "Comic Sans MS", "Comic Sans";
+}
+
+#font-family_example {
+  font-family: "Comic Sans MS", "Comic Sans";
+}
+
+#style-weight_example {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#width-height_example {
+  color: white;
+  width: 30%;
+  height: 75px;
+  background-color: rgb(17, 74, 110);
+}
+
+#list-style_example1 {
+  padding: 0px;
+  list-style: square inside;
+}
+
+#list-style_example2 {
+  padding: 0px;
+  list-style: decimal inside;
+}
+
+#margin_example {
+  padding: 0px;
+  margin-left: 100px;
+}
+
+#padding_example {
+  padding-left: 100px;
+}
+
+#overflow_example {
+  color: white;
+  background-color: rgb(17, 74, 110);
+  width: fit-content;
+  height: 30px;
+  overflow: scroll;
+}
+
+#display_example {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#position_example {
+  position: relative;
+  left: 30px;
+}
+
+#filter_example {
+  filter: blur(1px);
+}
