@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="../css/css_flexbox.css">
+</head>
+
+<body>
+    <nav class="row_flex">
+        <h4 id="nav_title">Simple web page</h4>
+
+        <div class="row_flex" id="menu">
+            <div>Content</div>
+            <div>About</div>
+            <div>Contact us</div>
+        </div>
+    </nav>
+
+    <section class="column_flex" id="main_body">
+        <h2>Web development course!</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique enim distinctio quaerat tempora optio
+            error, facilis doloremque, dicta magni praesentium nesciunt nemo, fuga expedita repudiandae ipsum aliquid
+            illum mollitia sint.
+        </p>
+    </section>
+
+    <aside class="row_flex" id="newsletter">
+        <h5>Subscribe to the newsletter</h5>
+
+        <form>
+            <input type="email" placeholder="Enter your email" name="email_input" id="email_input">
+            <input type="submit" value="Subscribe" id="subscribe_button">
+        </form>
+    </aside>
+
+    <section class="row_flex" id="technologies">
+        <div class="column_flex">
+            <img src="http://placekitten.com/101/150" alt="kitten">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+
+        <div class="column_flex">
+            <img src="http://placekitten.com/100/151" alt="kitten">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+
+        <div class="column_flex">
+            <img src="http://placekitten.com/100/149" alt="kitten">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+    </section>
+
+    <footer class="row_flex">
+        <p>
+            TC2005 Copyright © 2021
+        </p>
+    </footer>
+</body>
+
+</html>

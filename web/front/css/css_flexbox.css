@@ -1,0 +1,86 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #25404B;
+}
+
+nav {
+    color: white;
+    background-color: #25404B;
+    min-height: 8vh;
+}
+
+footer {
+    color: white;
+    background-color: #25404B;
+    font-size: 8px;
+    padding: 10px;
+    min-height: 11vh;
+}
+
+.column_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.row_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+}
+
+#menu {
+    justify-content: space-between;
+    flex-basis: 220px;
+    white-space: nowrap;
+}
+
+#nav_title {
+    white-space: nowrap;
+}
+
+#main_body {
+    color: white;
+    background-color: #B87D2C;
+    min-height: 40vh;
+}
+
+
+#main_body * {
+    max-width: 75%;
+}
+
+#newsletter {
+    background-color: #25404B;
+    color: white;
+    justify-content: center;
+    gap: 5%;
+    min-height: 11vh;
+}
+
+#subscribe_button {
+    background-color: #B87D2C;
+    color: white;
+    border: none;
+}
+
+#email_input {
+    padding: 0;
+}
+
+#technologies {
+    padding: 20px;
+    font-size: 12px;
+    min-height: 30vh;
+    background-color: white;
+}
