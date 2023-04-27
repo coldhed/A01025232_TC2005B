@@ -154,6 +154,8 @@ function orderAlphabetically(listOfStrings) {
 console.log(orderAlphabetically(["aaaa", "a", "b", "d", "c", "apple"]))
 
 function medianAndMode(array) {
+    array = array.sort()
+
     let answer = {}
 
     // calculate the median
