@@ -14,7 +14,9 @@ public class Score : MonoBehaviour
 {
     [SerializeField] TMP_Text scoreText;
     [SerializeField] ParticleSystem particles;
+    [SerializeField] BellMotion bell;
     int points;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +32,7 @@ public class Score : MonoBehaviour
 
         // emit particles
         particles.Emit(5);
+
+        bell.StartRing();
     }
 }

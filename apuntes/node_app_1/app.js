@@ -42,6 +42,15 @@ app.get('/api/greeting/:name/:surname', (req, res)=>{
         res.send('Hello!')
 })
 
+app.get('/api/json_test', (req, res) =>{
+    res.json(
+        {
+        name:'Santiago',
+        surname:'Rodriguez'
+        }
+    )
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
