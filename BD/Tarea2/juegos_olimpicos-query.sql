@@ -62,12 +62,15 @@ WHERE PAIS.nombre NOT IN ( -- seleccionar paises que no esten en la lista de los
 SELECT AVG(PRUEBA.num_par) FROM PRUEBA;
 
 -- Porpongan una consulta que involucre dos tabla con GROUP BY --- Nueva consulta
+
+-- una tabla donde se ve cuántas pruebas hay por disciplina
 SELECT DISCIPLINA.nombre, DISCIPLINA.disciplina, COUNT(PRUEBA.disciplina)
 FROM DISCIPLINA LEFT JOIN PRUEBA ON DISCIPLINA.identificador = PRUEBA.disciplina
 GROUP BY DISCIPLINA.disciplina, DISCIPLINA.nombre;
 
 
 -- Porpongan una consulta que involucre tres tablas con las sentencias LEFT JOIN, ORDER BY, GROUP BY Y LIMIT--- Nueva consulta
+-- lista de los top 3 participantes que participaron en más pruebas de una naturaleza (eliminatoria o final)
 SELECT 
 	DEPORTISTA.matricula, 
     DEPORTISTA.nombre, 
@@ -80,6 +83,8 @@ ORDER BY num DESC
 LIMIT 3;
 
 -- Porpongan una consulta que involucre tres tablas con las sentencias INNER JOIN y LIKE
+
+-- lista de los atletas finalistas y en qué pruebas participaron
 SELECT DEPORTISTA.nombre, DISCIPLINA.nombre AS disciplina_eliminatioria FROM DEPORTISTA 
 INNER JOIN CLASIFICACION ON DEPORTISTA.matricula = CLASIFICACION.deportista
 INNER JOIN PRUEBA ON CLASIFICACION.prueba = PRUEBA.identificador
